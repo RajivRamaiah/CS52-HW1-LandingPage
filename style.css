@@ -1,16 +1,16 @@
-body{
+body {
     font-family: 'Hind Madurai', sans-serif;
-    color: white
     margin: 0;
     padding: 0;
     background-image: url(space.jpg);
-    background-size: cover;
+    /*background-size: cover;*/
+    color: white
 }
 
-.cover {
+/*.cover {
   background-image: url(NewYork.jpg);
   background-size: cover;
-}
+}*/
 
 /*h1{
   color: red;
