@@ -1,6 +1,13 @@
 body{
     font-family: 'Hind Madurai', sans-serif;
     background-color: #99CCFF;
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+  background-image: url(img/yourimageyname.jpg);
+  background-size: cover;
 }
 
 /*h1{
