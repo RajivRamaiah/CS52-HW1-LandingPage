@@ -13,7 +13,7 @@ body {
   /* justify-content: flex-start | flex-end | center | space-between | space-around */
   align-items: center;
   /* align-items: flex-start | flex-end | center | baseline | stretch */
-  flex-direction: row;
+  flex-direction: column;
   /*flex-direction: row | row-reverse | column | column-reverse*/
 }
 
