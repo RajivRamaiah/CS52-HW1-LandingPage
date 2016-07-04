@@ -2,46 +2,145 @@ body {
   font-family: 'Hind Madurai', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(wallpaper.jpg);
+  background-image: url(waves.jpg);
   /*background-size: cover;*/
   color: white
 }
 
+a {
+  text-decoration:none;
+  color: white;
+  font-size: 25pt
+}
+
+h1 {
+  font-size: 40pt
+}
+
+nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#menu li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-flex;
+  list-style-type: none;
+  align-items: flex-end;
+}
+
+/*taken from source code of slack.com*/
+#sign-in {
+  display: inline-block;
+  padding: 10px 14px 12px;
+  line-height: 1em;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12pt;
+  margin-left: 17px;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.75);
+}
+
+/*footer a {
+  text-decoration:none;
+  color: white;
+  font-size: 10pt
+}*/
+
 .content{
+  padding-top: 100px;
   display: flex;
   justify-content: space-around;
   /* justify-content: flex-start | flex-end | center | space-between | space-around */
   align-items: center;
   /* align-items: flex-start | flex-end | center | baseline | stretch */
   flex-direction: column;
+  padding-bottom: 100px;
   /*flex-direction: row | row-reverse | column | column-reverse*/
 }
 
-/*.cover {
-  background-image: url(NewYork.jpg);
-  background-size: cover;
-}*/
+.bottom-list {
+  background-color: transparent;
+  border-top: 1px solid rgba(255,255,255,.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
 
-/*h1{
-  color: red;
+.bottom-list ul{
+  list-style-type: none;
+}
+
+#light-li {
+  color: rgba(255,255,255,.6);
+}
+
+.textbox {
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-start | flex-end | center | space-between | space-around */
+  align-items: center;
+  /* align-items: flex-start | flex-end | center | baseline | stretch */
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 80px 100px 100px 20px;
+
+}
+
+input {
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.4;
+}
+button {
+  background-color: #a5d88f;
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 10px;
   text-align: center;
-  font-size: 60px;
-  animation-name: name_head;
-  animation-duration: 2s;
-}*/
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-/*Found out how to center from above sources*/
-/*IMG.displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-}*/
+button:hover {
+  background-color: #70dd41;
+}
 
-/*Found out how to animate from above sources*/
-/*@keyframes name_head {
-    from {color: green; font-size: 1px;}
-    to {color: red; font-size: 60px;}
-}*/
-/*ul {
-    list-style-type: none;
+footer {
+  background-color: rgba(255, 255, 255, 0.05);
+  /*padding-top: 10px;*/
+  padding-left: 20px;
+  padding-bottom: 0px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-start | flex-end | center | space-between | space-around */
+  align-items: flex-end;
+  /* align-items: flex-start | flex-end | center | baseline | stretch */
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 640px) {
+  flex-direction: column;
 }
