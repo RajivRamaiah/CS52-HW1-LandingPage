@@ -1,8 +1,10 @@
 body{
     font-family: 'Hind Madurai', sans-serif;
+    color: white
     margin: 0;
     padding: 0;
     background-image: url(Sedona.jpg);
+    background-size: cover;
 }
 
 .cover {
