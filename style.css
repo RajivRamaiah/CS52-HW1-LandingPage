@@ -1,30 +1,37 @@
+
 body {
   font-family: 'Hind Madurai', sans-serif;
   margin: 0;
   padding: 0;
   background-image: url(waves.jpg);
-  /*background-size: cover;*/
   color: white
 }
 
-a {
-  text-decoration:none;
-  color: white;
-  font-size: 25pt
-}
 
 h1 {
-  font-size: 40pt
+  font-size: 40pt;
 }
 
 nav {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 15px 15px;
   display: flex;
   justify-content: space-between;
 }
 
+nav a {
+  text-decoration:none;
+  color: white;
+  font-size: 25pt;
+  padding: 15px 15px 15px;
+}
 
+/*taken from source code of slack.com*/
+#sign-in {
+  padding: 8px 0px 8px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+}
 
 #menu li {
   padding-left: 10px;
@@ -34,35 +41,13 @@ nav {
   align-items: flex-end;
 }
 
-/*taken from source code of slack.com*/
-#sign-in {
-  display: inline-block;
-  padding: 10px 14px 12px;
-  line-height: 1em;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 4px;
-  font-size: 12pt;
-  margin-left: 17px;
-  box-shadow: inset 0 0 0 2px rgba(255,255,255,.75);
-}
-
-/*footer a {
-  text-decoration:none;
-  color: white;
-  font-size: 10pt
-}*/
-
 .content{
   padding-top: 100px;
   display: flex;
   justify-content: space-around;
-  /* justify-content: flex-start | flex-end | center | space-between | space-around */
   align-items: center;
-  /* align-items: flex-start | flex-end | center | baseline | stretch */
   flex-direction: column;
-  padding-bottom: 100px;
-  /*flex-direction: row | row-reverse | column | column-reverse*/
+  padding-bottom: 10px;
 }
 
 .bottom-list {
@@ -83,16 +68,30 @@ nav {
 }
 
 .textbox {
-  display: flex;
-  justify-content: center;
-  /* justify-content: flex-start | flex-end | center | space-between | space-around */
-  align-items: center;
-  /* align-items: flex-start | flex-end | center | baseline | stretch */
-  flex-direction: row;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
+}
 
+.textbox :first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.textbox :last-child{
+  text-align: center;
+}
+
+#citation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-right: 300px;
+  font-size: 10pt;
+  padding-bottom: 100px;
 }
 
 input {
@@ -115,33 +114,37 @@ button {
   color: white;
   padding: 14px 30px;
   border-radius: 10px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 4px 2px;
+  margin-left: 8px;
   cursor: pointer;
+  outline: none;
+}
+
+button:active {
+  background: #599041;
 }
 
 button:hover {
   background-color: #70dd41;
 }
-div {
-  width: 100%;
-}
 
 footer {
   background-color: rgba(255, 255, 255, 0.05);
-  /*padding-top: 10px;*/
   padding-left: 20px;
   padding-bottom: 0px;
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
-  /* justify-content: flex-start | flex-end | center | space-between | space-around */
   align-items: flex-end;
-  /* align-items: flex-start | flex-end | center | baseline | stretch */
   flex-direction: row;
+}
+footer a {
+  text-decoration:none;
+  color: white;
+  font-size: 20pt;
+  padding: 0px 0px 10px 20px;
 }
 
 @media only screen and (max-width: 640px) {
